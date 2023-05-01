@@ -1,4 +1,4 @@
-package com.haedal.fhiller;
+package com.haedal.fhiller.web;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
