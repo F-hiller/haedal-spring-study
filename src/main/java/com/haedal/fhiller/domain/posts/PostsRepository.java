@@ -1,4 +1,4 @@
-package com.haedal.fhiller.web.domain.posts;
+package com.haedal.fhiller.domain.posts;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

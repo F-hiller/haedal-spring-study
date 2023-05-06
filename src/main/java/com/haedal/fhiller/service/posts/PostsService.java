@@ -1,7 +1,7 @@
 package com.haedal.fhiller.service.posts;
 
-import com.haedal.fhiller.web.domain.posts.Posts;
-import com.haedal.fhiller.web.domain.posts.PostsRepository;
+import com.haedal.fhiller.domain.posts.Posts;
+import com.haedal.fhiller.domain.posts.PostsRepository;
 import com.haedal.fhiller.web.dto.PostsResponseDto;
 import com.haedal.fhiller.web.dto.PostsSaveRequestDto;
 import com.haedal.fhiller.web.dto.PostsUpdateRequestDto;

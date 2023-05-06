@@ -1,4 +1,4 @@
-package com.haedal.fhiller.web.Controller;
+package com.haedal.fhiller.web;
 
 import com.haedal.fhiller.web.dto.HelloResponseDto;
 import org.springframework.web.bind.annotation.GetMapping;

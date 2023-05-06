@@ -1,6 +1,6 @@
 package com.haedal.fhiller.web.dto;
 
-import com.haedal.fhiller.web.domain.posts.Posts;
+import com.haedal.fhiller.domain.posts.Posts;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

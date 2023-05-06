@@ -1,6 +1,6 @@
-package com.haedal.fhiller.web.domain.posts;
+package com.haedal.fhiller.domain.posts;
 
-import com.haedal.fhiller.web.domain.BaseTimeEntity;
+import com.haedal.fhiller.domain.BaseTimeEntity;
 import jakarta.persistence.*;
 import lombok.Builder;
 import lombok.Getter;

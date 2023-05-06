@@ -1,4 +1,4 @@
-package com.haedal.fhiller.web.Controller;
+package com.haedal.fhiller.web;
 
 import com.haedal.fhiller.service.posts.PostsService;
 import com.haedal.fhiller.web.dto.PostsResponseDto;
