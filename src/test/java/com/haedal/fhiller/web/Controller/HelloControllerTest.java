@@ -19,6 +19,7 @@ class HelloControllerTest {
     @Autowired
     private MockMvc mvc;
 
+    // MockMVC를 통해서 API 요청을 보내보고 확인하는 테스트
     @Test
     void return_hello() throws Exception {
         String hello = "hello";
@@ -27,6 +28,7 @@ class HelloControllerTest {
                 .andExpect(content().string(hello));
     }
 
+    // MockMVC를 통해서 API 요청을 보내보고 Dto를 통한 정보 송수신이 가능한지 확인하는 테스트
     @Test
     void return_helloDto() throws Exception {
         String name = "hello";

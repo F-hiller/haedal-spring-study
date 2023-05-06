@@ -22,6 +22,7 @@ public class PostsRepositoryTest {
     @Autowired
     PostsRepository postsRepository;
 
+    // @After 어노테이션을 통한 테스트 후 처리 작업.
     @After
     public void 게시글저장_불러오기() {
         String title = "test title";
@@ -36,6 +37,7 @@ public class PostsRepositoryTest {
         assertThat(posts.getContent()).isEqualTo(content);
     }
 
+    // BaseTimeEntity를 통해서 생성일과 수정일이 제대로 등록되는지 테스트.
     @Test
     public void BaseTimeEntity_등록() {
         LocalDateTime now = LocalDateTime.of(2019, 6, 4, 0, 0, 0);
