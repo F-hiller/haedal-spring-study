@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+// Health Check 역할을 하는 HelloController
 @RestController
 public class HelloController {
     @GetMapping("/hello")

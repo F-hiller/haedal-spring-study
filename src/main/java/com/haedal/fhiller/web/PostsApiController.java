@@ -7,6 +7,7 @@ import com.haedal.fhiller.web.dto.PostsUpdateRequestDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
+// posts와 관련된 API를 처리하는 PostsApiController
 @RequiredArgsConstructor
 @RestController
 public class PostsApiController {

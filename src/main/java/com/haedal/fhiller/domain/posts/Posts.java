@@ -9,6 +9,7 @@ import lombok.NoArgsConstructor;
 @Getter
 @NoArgsConstructor
 @Entity
+// 기존 Posts에서 Time 정보를 반영하기 위해 BaseTimeTnitiy를 상속함.
 public class Posts extends BaseTimeEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -22,6 +23,7 @@ public class Posts extends BaseTimeEntity {
 
     private String author;
 
+    // builder 패턴으로 Class의 정보 저장.
     @Builder
     public Posts(String title, String content, String author) {
         this.title = title;

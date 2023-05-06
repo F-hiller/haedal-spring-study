@@ -11,14 +11,17 @@ import org.springframework.transaction.annotation.Transactional;
 
 @RequiredArgsConstructor
 @Service
+// Posts Repository와 PostsApiController 사이의 정보 교환을 처리하는 로직을 담당하는 PostsService.
 public class PostsService {
     private final PostsRepository postsRepository;
 
+    // 정보를 저장
     @Transactional
     public Long save(PostsSaveRequestDto requestDto) {
         return postsRepository.save(requestDto.toEntity()).getId();
     }
 
+    // 정보를 수정
     @Transactional
     public Long update(Long id, PostsUpdateRequestDto requestDto) {
         Posts posts = postsRepository.findById(id).orElseThrow(() -> new IllegalArgumentException("해당 게시글이 없습니다. id=" + id));
@@ -28,6 +31,7 @@ public class PostsService {
         return id;
     }
 
+    // 정보를 검색
     public PostsResponseDto findById(Long id) {
         Posts entity = postsRepository.findById(id).orElseThrow(() -> new IllegalArgumentException("해당 게시글이 없습니다. id=" + id));
 
