@@ -1,4 +1,4 @@
-package com.haedal.fhiller.web.domain.posts;
+package com.haedal.fhiller.domain.posts;
 
 import com.haedal.fhiller.domain.posts.Posts;
 import com.haedal.fhiller.domain.posts.PostsRepository;
